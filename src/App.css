@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300,400,900);
+
+body {
+  font-family: "Titillium Web", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-inputs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-inputs label:first-child {
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-inputs label:first-child input {
+  width: calc(100% - 6px);
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  line-height: 44px;
+}
+
+.todo-content {
+  padding-right: 1em;
+  flex-grow: 1;
+}
+
+.edit-todo-input {
+  width: calc(100% - 6px + 1em);
+  box-sizing: border-box;
+}
+
+.update-button {
+  padding-left: 19px;
+  padding-right: 18px;
 }
